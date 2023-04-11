@@ -1,0 +1,37 @@
+
+#main{
+    width: 100px;
+    height: 100px;
+    border: 3px dashed black;
+}
+
+#container{
+    border: 3px solid red;
+    width: 100px;
+    height: 100px;
+}
+
+div{
+    border:1px solid black;
+}
+
+.row{
+    display: flex;
+    margin: 0px;
+    width:100;
+    
+}
+
+.col{
+    width: 16px;
+    height: 16px;
+    margin: 0px;
+}
+
+.colColor{
+    background-color: black;
+}
+
+#buttons{
+    margin: 50px;
+}
