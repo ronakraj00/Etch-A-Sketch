@@ -35,7 +35,7 @@ function changeColor(evt){
     const rows=document.querySelectorAll('.row');
     const cols=document.querySelectorAll('.col');
     if(evt=='rColor'){
-        cols.forEach(col=>{col.addEventListener('click',()=>{
+        cols.forEach(col=>{col.addEventListener('mouseover',()=>{
             // col.classList.add('colColor');
             randomColor=Math.floor(Math.random()*16777215).toString(16);
             col.style.backgroundColor = "#" + randomColor;
@@ -43,13 +43,13 @@ function changeColor(evt){
         })});
     }
     if(evt=='wColor'){
-        cols.forEach(col=>{col.addEventListener('click',()=>{
+        cols.forEach(col=>{col.addEventListener('mouseover',()=>{
             col.style.backgroundColor = 'white';
         
         })});
     }
     if(evt=='bColor'){
-        cols.forEach(col=>{col.addEventListener('click',()=>{
+        cols.forEach(col=>{col.addEventListener('mouseover',()=>{
     col.style.backgroundColor ='black';
 
 
