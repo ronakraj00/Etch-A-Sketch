@@ -44,7 +44,7 @@ function changeColor(evt){
     }
     if(evt=='wColor'){
         cols.forEach(col=>{col.addEventListener('mouseover',()=>{
-            col.style.backgroundColor = 'white';
+            col.style.backgroundColor = 'azure';
         
         })});
     }
@@ -68,7 +68,7 @@ const boxSizes=document.querySelectorAll('.boxSize');
 boxSizes.forEach(boxSize=>{boxSize.addEventListener('click',(evt)=>{
     // console.log(evt.target.id);
     boxSize.classList.toggle('buttonColor');
-    resetDiv();
+   resetDiv();
     
     createDiv(evt.target.id);
     // changeColor(evt);
@@ -91,4 +91,5 @@ function resetDiv(){
     while(container.hasChildNodes()){
         container.removeChild(container.firstChild);
     }
+    
 }
