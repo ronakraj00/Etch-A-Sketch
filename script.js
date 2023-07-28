@@ -30,12 +30,26 @@ function changeColor(evt) {
         randomColor = Math.floor(Math.random() * 16777215).toString(16);
         col.style.backgroundColor = "#" + randomColor;
       });
+      col.addEventListener("touchstart",()=>{
+        randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        col.style.backgroundColor = "#" + randomColor;
+      })
+      col.addEventListener("touchmove",()=>{
+        randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        col.style.backgroundColor = "#" + randomColor;
+      })
     });
   } else {
     cols.forEach((col) => {
       col.addEventListener("mouseover", () => {
         col.style.backgroundColor = evt;
       });
+      col.addEventListener("touchstart",()=>{
+        col.style.backgroundColor = evt;
+      })
+      col.addEventListener("touchmove",()=>{
+        col.style.backgroundColor = evt;
+      })
     });
   }
 }
