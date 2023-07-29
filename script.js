@@ -4,6 +4,9 @@ const main = document.querySelector("#main");
 //create div's
 function createDiv(id) {
   const container = document.createElement("div");
+  // container.addEventListener("pointermove",(e)=>{
+  //   createDot(e);
+  // })
   container.setAttribute("id", "container");
   for (let i = 1; i <= id; i++) {
     const rowDiv = document.createElement("div");
@@ -86,4 +89,13 @@ function resetDiv() {
     if(container){
         container.remove();
     }
+}
+
+function createDot(e){
+  const dot= document.createElement('div');
+  dot.classList.add("dot");
+  dot.style.top=`${e.pageY-60}px`;
+  dot.style.left=`${e.pageX-20}px`;
+  const container=document.querySelector("#container");
+  container.append(dot);
 }

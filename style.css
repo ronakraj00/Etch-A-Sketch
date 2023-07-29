@@ -39,7 +39,18 @@ header {
   border-radius: 14px;
   box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.194);
   overflow: hidden;
+  touch-action: none;
+  position: relative;
 }
+
+/* .dot{
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  /* border-radius: 50%; */
+  /* background-color: rgb(255, 0, 0);
+  z-index: -1;
+} */
 
 .row {
   display: flex;
@@ -114,6 +125,7 @@ button {
 }
 
 footer {
+  margin-bottom: 10px;
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
